@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: white;
+  padding: 3px 20px;
+}
+
+.logo-container {
+  margin-right: 20px; /* Ajusta el margen según sea necesario para el espacio */
+}
+
+.logo-image {
+  width: 190px; /* Ajusta el ancho y el alto según sea necesario */
+  height: 52px;
+}
+
+.navbar-options {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-options a {
+  color: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none; 
+  margin-left: 5px;
+  margin-right: 25px;
+  
+}
+
+.active {
+  color: #007bff; /* Cambia el color de la opción activa según tus preferencias */
+  margin-left: 20px;
+  
+}
