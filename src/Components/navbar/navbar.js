@@ -15,6 +15,10 @@ const links = [
     name: 'Proyectos',
     href: '/proyectos'
   },
+  {
+    name: 'Contacto',
+    href: '/contacto'
+  },
 ];
 
 function Navbar() {

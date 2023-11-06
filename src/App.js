@@ -19,6 +19,7 @@ import proy2_3 from './Components/proyectos/imgs/proy2.3.png';
 import proy3_1 from './Components/proyectos/imgs/proy3.1.png';
 
 import perfil from './Components/sobremi/imgs/unnamed.jpg';
+import Contacto from './Components/contacto/contacto';
 
 function App() {
   return (
@@ -88,7 +89,19 @@ function App() {
                
               />
             </>
+
           } />
+
+          <Route path="contacto" element={
+              <Contacto
+              correo="dcarrillod1@miumg.edu.gt"
+              telefono="0000-0000"
+              direccion="3a. Avenida 9-00 zona 2, 01002 Interior Finca El Zapote, Cdad. de Guatemala "
+              
+              
+            />
+            } 
+          />
         </Routes>
       </Router>
     </div>
