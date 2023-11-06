@@ -41,20 +41,21 @@ function App() {
           <Route path="/proyectos" element={
             <>
               <Proyectos
-                h1info="Proyecto 1"
+                idinfo="Proyecto 1"
                 imglinks={[proy1_1, proy1_2, proy1_3]}
                 imgalts={['Imagen 1', 'Imagen 2', 'Imagen 3']}
-                parrafo="Descripción proyecto 1"
+                parrafo="En te primer proyecto se utilizo la creacion de componentes para poder reutilizarse y pasar diferentes parametros 
+                como se uede ver son iguales exceptuando el contenido"
               />
               <Proyectos
-                h1info="Proyecto 2"
+                idinfo="Proyecto 2"
                 imglinks={[proy2_1, proy2_2, proy2_3]}
                 imgalts={['Imagen 1', 'Imagen 2', 'Imagen 3']}
                 parrafo="Para este segundo proyecto se creo un tipo de api para guardar,
                 modificar y eliminar usuarios dentro de una base de datos de MongoDB"
               />
               <Proyectos
-                h1info="Proyecto 3"
+                idinfo="Proyecto 3"
                 imglinks={[proy3_1]}
                 imgalts={['Imagen 1']}
                 parrafo="Se realizo un tipo de publicacion de facebook en donde se puede contar la cantidad de likes y dislikes"

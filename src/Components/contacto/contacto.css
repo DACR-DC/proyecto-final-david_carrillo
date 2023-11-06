@@ -1,18 +1,18 @@
-
 .contacto-container {
     background-color: #1E171A;
     padding: 20px;
     color: white;
-    margin: 100px;
     border-radius: 15px;
     -webkit-animation: slide-in-fwd-center 2s cubic-bezier(.25, .46, .45, .94) both;
     animation: slide-in-fwd-center 2s cubic-bezier(.25, .46, .45, .94) both;
-  }
+    margin-top: 61px;
+}
 
-  .contacto-container p{
-   margin: 20px;
-   color: #6BFF88;
-  }
+.contacto-container p {
+    margin: 10px; 
+    color: #6BFF88;
+}
+
   
   
 
@@ -41,4 +41,6 @@
       opacity: 1;
     }
   }
+
+  
   

@@ -1,26 +1,26 @@
 import React, { useState } from 'react';
 import './proyectos.css';
 
-function Proyectos({ h1info, parrafo, imglinks, imgalts }) {
-  const [currentImage, setCurrentImage] = useState(0);
+function Proyectos({ idinfo, parrafo, imglinks, imgalts }) {
+  const [imgactual, setimgactual] = useState(0);
 
-  const handleNextImage = () => {
-    setCurrentImage((prevImage) => (prevImage + 1) % imglinks.length);
+  const siguientimagen = () => {
+    setimgactual((prevImage) => (prevImage + 1) % imglinks.length);
   };
 
-  const handlePrevImage = () => {
-    setCurrentImage((prevImage) => (prevImage + imglinks.length - 1) % imglinks.length);
+  const imagenanterior = () => {
+    setimgactual((prevImage) => (prevImage + imglinks.length - 1) % imglinks.length);
   };
 
   return (
-    <div id={h1info === 'Proyecto 1' ? 'proyecto1' : 'proyecto2'} className="proyecto">
-      <h1>{h1info}</h1>
-      <img src={imglinks[currentImage]} alt={imgalts[currentImage]} />
+    <div id={idinfo === 'Proyecto 1' ? 'proyecto1' : 'proyecto2'} className="proyecto">
+      <h1>{idinfo}</h1>
+      <img src={imglinks[imgactual]} alt={imgalts[imgactual]} />
       <p className='desc'>{parrafo}</p>
 
       <div className="image-navigation">
-        <button onClick={handlePrevImage}>Anterior</button>
-        <button onClick={handleNextImage}>Siguiente</button>
+        <button onClick={imagenanterior}>Anterior</button>
+        <button onClick={siguientimagen}>Siguiente</button>
       </div>
     </div>
   );
