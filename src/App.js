@@ -34,7 +34,7 @@ function App() {
               logo3={logo3} 
               alt="imagen de perfil"
               parrafo="Este es el proyecto final del curso de Desarrollo Web, el cual tiene como finalidad que los estudiantes apliquen y demuestren sus habilidades y conocimientos adquiridos durante el curso de Desarrollo Web. El proyecto consiste en el desarrollo de una página web personal, funcionando como un portafolio o CV digital."
-              
+               
             />
             } 
           />
